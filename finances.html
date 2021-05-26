@@ -1,0 +1,697 @@
+<!doctype html>
+<html lang="english">
+
+<head>
+    <title>AAPS CDT Business Pitch</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hanalei&family=Raleway&family=Stalinist+One&family=Stick&family=Quicksand&family=Yatra+One&family=Orbitron&family=Train+One&family=Iceberg&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html"><img src="img/logo.png" alt="Novus Logo"></a>
+        <input type="checkbox" id="menu">
+        <label for="menu" class="menubtn">
+            <i id="open">&#8801</i>
+        </label>
+        <ul>
+            <li>AAPS CDT Cohort 2 Novus Concept</li>
+        </ul>
+    </nav>
+    <img src="img/bannerlogo.png" class="banner">
+    <h1 class="title">AAPS CDT Novus</h1>
+    <div class="accordion">
+        <div class="row" onclick="accordion(1)">
+            <div class="item">
+                <h6>Battery System Design</h6>
+            </div>
+            <div class="plus">
+                <h6>+</h6>
+            </div>
+            <div class="cost">
+                <h6></h6>
+            </div>
+        </div>
+        <div class="expand" id="ach1">
+            <h4 class="sectionhead">Requirements</h4>
+            <div class="parentflex">
+                <div class="achinner">
+                    <img src="img/battery/req1.jpg" class="reqs">
+                    <h5>Range</h5>
+                    <p>50 Miles EV only range</p>
+                </div>
+                <div class="achinner">
+                    <img src="img/battery/req2.jpg" class="reqs">
+                    <h5>Performance</h5>
+                    <p>85 kW max output for a 0-62 sprint</p>
+                </div>
+                <div class="achinner">
+                    <img src="img/battery/req3.jpg" class="reqs">
+                    <h5>Sustainability</h5>
+                    <p>Minimise use of rare earth elements</p>
+                </div>
+                <div class="achinner">
+                    <img src="img/battery/req4.jpg" class="reqs">
+                    <h5>Fast Charging</h5>
+                    <p>10-80% SoC in under 20 minutes</p>
+                </div>
+            </div>
+            <h4 class="sectionhead">Design</h4>
+            <div class="parentflex">
+                <div class="achinner">
+                    <img src="img/battery/3dmodel.png" class="one">
+                </div>
+                <div class="achinner" style="flex-grow: 0;">
+                    <p>The pack has been designed with an aluminium cooling jacket to extract and deliver heat to and
+                        from the cells, whilst enabling the pack to act as a structural component, aiding with
+                        packaging. To minimise temperature gradients, the coolant will operate in a counterflow
+                        configuration.
+                    </p>
+                </div>
+                <div class="achinner">
+                    <img src="img/battery/charge.png" class="one">
+                </div>
+            </div>
+            <div class="parentflex">
+                <div class="achinner">
+                    <img src="img/battery/pack.png" class="two">
+                </div>
+                <div class="achinner">
+                    <img src="img/battery/specs.png" class="two">
+                </div>
+            </div>
+            <div class="parentflex">
+                <div class="achinner">
+                    <p>The Blade battery cell allows a greater cell-to-pack ratio as the cells can slip into the pack
+                        (no need for modules) and the advantages include an increase in the energy density of the pack
+                        and reduce need of supplementary materials (such as adhesives) [1]. Additionally, the blade cell
+                        are relatively low cost ($100/kWh) and the large surface area allow substantial heat dissipation
+                        to reduce risk of thermal runaway. Furthermore, the design of the blades allows the employment
+                        of disassembly tabs to allow greater recoverability of cell material and ease of recycling [2].
+                    </p>
+                </div>
+            </div>
+            <h4 class="sectionhead">Results</h4>
+            <div class="parentflex">
+                <div class="achinner">
+                    <img src="img/battery/temps.png" class="three">
+                </div>
+                <div class="achinner" style="flex-grow: 0;">
+                    <p>
+                        A three-dimensional thermal analysis showed that under 50 kW of continuous power draw,
+                        temperature gradients did not exceed 5oC in the cells or 10oC in the pack. This is important for
+                        minimising cell aging and ensure safe operation for the consumer.
+                    </p>
+                </div>
+            </div>
+            <div class="parentflex">
+                <div class="achinner" style="flex-grow: 0;">
+                    <p>
+                        Additionally, a lumped capacitance thermal model was developed to study the average thermal
+                        behaviour of the battery pack. Simulations showed that in a motorway driving scenario, the
+                        cooling system ensures that the battery temperature does not exceed 35oC within different
+                        ambient temperatures, which is within the optimal temperature range for a Lithium Iron Phosphate
+                        battery to perform.</p>
+                </div>
+                <div class="achinner">
+                    <img src="img/battery/graphstemp.png" style="height: 350px;">
+                </div>
+            </div>
+            <div class="parentflex">
+                <div class="achinner">
+                    <img src="img/battery/graph.png" style="height: 550px;">
+                </div>
+                <div class="achinner" style="flex-grow: 0;">
+                    <p>
+                        The peak charging power ranges from 63kW to 70kW at a maximum current of 160A, and 48kW to 55kW
+                        at a maximum current of 125A, due to the effect that temperature has on the terminal battery
+                        voltage. For initial battery temperatures of 20°C and 30°C, the constant current portion of the
+                        charging profile is held between 10% - 40% SoC at 160A and 10% - 60% SoC at 125A. However, at
+                        lower and higher temperatures, the current begins to drop much earlier, due to the battery
+                        voltage reaching the threshold in a shorter time.
+                    </p>
+                    <p>
+                        A fast charging time of 10%-80% SoC in under 20 minutes is met at initial battery temperatures
+                        of between 13.7°C – 37.4°C for a 160A peak current, and 15.9°C – 35.9°C for a 125A peak current.
+                        Beyond these temperatures, fast charging time is significantly slowed. The similarity in results
+                        between 160A and 125A is mainly due to the CCCV profile preventing the overcharging of the
+                        battery.
+                    </p>
+                </div>
+            </div>
+            <div class="parentflex">
+                <div class="achinner" style="flex-grow: 0;">
+                    <p>
+                        During the low, medium, and high-speed sections of the WLTP test cycle, the battery used 2.2kWh
+                        of energy over 15km giving the Novus an efficiency of 14.7 kWh/100km or 4.3 miles/kWh.
+                        Therefore, the projected WLTP electric-only range of the Novus is 93 miles (150km).
+                    </p>
+                </div>
+                <div class="achinner">
+                    <img src="img/battery/graph.png" style="height: 600px;">
+                </div>
+            </div>
+            <p>
+                [1] Yang, X., Liu, T. and Wang, C., 2021. Thermally modulated lithium iron phosphate batteries for
+                mass-market electric vehicles. Nature Energy, 6(2), pp.176-185.<br>
+                [2] Thompson, D., Hartley, J., Lambert, S., Shiref, M., Harper, G., Kendrick, E., Anderson, P., Ryder,
+                K., Gaines, L. and Abbott, A., 2020. The importance of design in lithium ion battery recycling – a
+                critical review. Green Chemistry, 22(22), pp.7585-7603.
+            </p>
+        </div>
+        <div class="row" onclick="accordion(2)">
+            <div class="item">
+                <h6>Business Canvas</h6>
+            </div>
+            <div class="plus">
+                <h6>+</h6>
+            </div>
+            <div class="cost">
+                <h6></h6>
+            </div>
+        </div>
+        <div class="expand" id="ach2">
+            <h4 class="sectionhead">Business Canvas</h4>
+            <div class="parentflex">
+                <div class="achinner">
+                    <img src="img/business/req1.png" class="reqs1">
+                    <h5>Revenue Streams</h5>
+                    <p style="text-align: center;">Vehicle sales<br>
+                        Aftersales<br>
+                        Vehicle software <br>
+                        Financial services<br>
+                        Mobility as a service
+                    </p>
+                </div>
+                <div class="achinner">
+                    <img src="img/business/req2.png" class="reqs1">
+                    <h5>Key Partners</h5>
+                    <p style="text-align: center;">Part Suppliers<br>
+                        Technology partners <br>(BYD, BP Chargemaster)
+                    </p>
+                </div>
+                <div class="achinner">
+                    <img src="img/business/req3.png" class="reqs1">
+                    <h5>Key Activities</h5>
+                    <p style="text-align: center;">Supplier & LCA audit<br>
+                        Real world driving testing<br>
+                        Customer survey
+                    </p>
+                </div>
+                <div class="achinner">
+                    <img src="img/business/req4.png" class="reqs1">
+                    <h5>Key Resources</h5>
+                    <p style="text-align: center;">Employees<br>
+                        Marketing influencers<br>
+                        Toyota factories – US (Engine & Assembly)<br>
+                        Toyota component development<br>
+                        Existing Toyota customer relationships
+                    </p>
+                </div>
+            </div>
+            <h4 class="sectionhead">Cost Structure</h4>
+            <div class="parentflex">
+                <div class="achinner">
+                    <img src="img/business/graph1.png" class="one">
+                </div>
+                <div class="achinner" style="flex-grow: 0;">
+                    <p>Base model:<br>
+                        Cost = $24,379<br>
+                        Dealership price = $30,000<br>
+                        Expected total sales = 736k<br> <br>
+
+                        Premium model:<br>
+                        Cost = $26,672<br>
+                        Dealership price = $35,000<br>
+                        Expected total sales = 184k<br>
+                        (Incl: interior upgrade, solar power, AWD, more efficient ICE & air-less tyres)
+                    </p>
+                    <p style="font-weight: bold;">
+                        Total profit over 5 year production = $4.3bn
+                    </p>
+                </div>
+            </div>
+            <h4 class="sectionhead">Customer</h4>
+            <div class="parentflex">
+                <div class="achinner">
+                    <img src="img/business/customerseg.png" class="reqs1">
+                    <h3>Customer Segments</h3>
+                    <p style="text-align: center;">30-59 age group<br>
+                        Middle class<br>
+                        Families with 1-2 children<br>
+                        Suburban and semi-rural areas<br>
+                        All US states<br>
+                        Annual median income $50k - $80k<br>
+                        Daily commute under 50km
+                    </p>
+                </div>
+                <div class="achinner">
+                    <img src="img/business/customerrel.png" class="reqs1">
+                    <h3>Customer Relationship</h3>
+                    <p style="text-align: center;">Product quality
+                    <ul style="margin-top: 0px;">
+                        <li>Safety</li>
+                        <li>Eco-friendliness</li>
+                        <li>Durability</li>
+                        <li>Workmanship</li>
+                    </ul>
+                    <br>
+                    Marketing quality
+                    <ul>
+                        <li>Sales</li>
+                        <li>Logistics</li>
+                    </ul>
+                    <br>
+                    Management quality
+                    <ul>
+                        <li>Brand Strength</li>
+                    </ul>
+                    </p>
+                </div>
+                <div class="achinner">
+                    <img src="img/business/customerchannel.png" class="reqs1">
+                    <h3>Channels</h3>
+                    <p style="text-align: center;">National differentiation marketing strategy<br>
+                        Toyota dealership network
+
+                    </p>
+                </div>
+            </div>
+            <h4 class="sectionhead">Value Proposition</h4>
+            < <div class="achinner">
+                <img src="img/business/value.png" style="width:200px;">
+        </div>
+        <div class="parentflex">
+            <div class="achinner">
+                <h3>Sustainability</h3>
+                <p style="text-align: center;">Use of sustainable materials and LCA in design<br>
+                    Highly efficient powertrain – ML optimisation<br>
+                    Low drag – active aerodynamic features<br>
+                    Multi-model feedback – reduce fuel consumption
+                </p>
+            </div>
+            <div class="achinner">
+                <h3>Affordability</h3>
+                <p style="text-align: center;">Mid-range market price ($35k - $40k)<br>
+                    Base & Premium model offerings<br>
+                    Low running costs & V2G solar power financial benefit
+                </p>
+            </div>
+            <div class="achinner">
+                <h3>Reliability</h3>
+                <p style="text-align: center;">PHEV –  able to utilise ICE fuels,<br> electric charging and solar power
+                    <br>Combined range ≥ 500 miles
+                </p>
+            </div>
+            <div class="achinner">
+                <h3>Comfort & Convenience</h3>
+                <p style="text-align: center;">Premium seating, wheel and interior options<br>
+                    5+2 seating layout & Boot capacity ≥ 360L<br>
+                    Ability to avoid emissions charges in EV mode<br>
+                    10-80% charging ˂ 20 mins
+                </p>
+            </div>
+            <div class="achinner">
+                <h3>Safety</h3>
+                <p style="text-align: center;">Active safety systems – includes driver monitoring<br>
+                    Intuitive interface design – minimising cognitive overload<br>
+                    NHTSA 5-star rating
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="row" onclick="accordion(4)">
+        <div class="item">
+            <h6>Eco-Feedback</h6>
+        </div>
+        <div class="plus">
+            <h6>+</h6>
+        </div>
+        <div class="cost">
+            <h6></h6>
+        </div>
+    </div>
+    <div class="expand" id="ach4">
+        <h4 class="sectionhead">The System</h4>
+        <div class="parentflex">
+            <div class="achinner">
+                <img src="img/human/req1.png" class="reqs2">
+                <p><strong>Visual, continuous,</strong> real-time aggressivity feedback
+
+                    Cascading traffic light system
+
+                    Aggressivity measured using inertial power surrogate
+                </p>
+            </div>
+            <div class="achinner">
+                <img src="img/human/req2.png" class="reqs2">
+                <p><strong>Haptic pedal vibrations</strong> if visual cues are not attended to
+
+                    Differing vibrations for amber and red lights
+
+                    Lateral vibrations
+                </p>
+            </div>
+            <div class="achinner">
+                <img src="img/human/req3.png" class="reqs2">
+                <p><strong>Post-driving gamified</strong> feedback
+
+                    Long-term aggressivity scores
+
+                    Local leader boards
+
+                    Context-sensitive charging incentives
+                </p>
+            </div>
+        </div>
+        <div class="parentflex">
+            <img src="img/human/req4.png" class="reqs2">
+        </div>
+        <h4 class="sectionhead">Theoretical Grounding</h4>
+        <div class="parentflex">
+            <div class="achinner">
+                <p>
+                    <strong>The Cognitive Control Hypothesis</strong> [1] states that the amount of information one’s
+                    working memory can hold simultaneously, known as cognitive load, is limited. To be processed
+                    effectively and safely, feedback must not place excessive demand upon one’s cognitive load.<br>
+
+                    <strong>Multiple Resource Theory</strong>[2] suggests that people have different cognitive resources
+                    for processing different types of information, meaning some modalities can be used concurrently
+                    without reducing attentional capacity, yet others cannot. Whilst visual and auditory stimuli place
+                    demand on the same perceptual resources, haptic cues rely on different resources.<br>
+
+                    This means haptic cues can be processed alongside visual cues, without exhausting the driver’s
+                    cognitive load. Therefore, <strong>visual-haptic feedback was selected for the proposed eco-feedback
+                        system.</strong><br>
+
+                    Long-term behaviour retention is achieved using social comparison of short and long-term
+                    performance, via the post-driving <strong>gamified</strong> app. <strong>Strategically-timed
+                        notifications</strong> are delivered to incentivise charging behaviours.<br>
+
+                </p>
+            </div>
+        </div>
+        <h4 class="sectionhead">Results</h4>
+        <div class="parentflex">
+            <div class="achinner">
+                <img src="img/human/res1.png" class="reqs2">
+                <p>
+                <ul>
+                    <li>0.018 kWh/km saved compared to no feedback</li>
+                    <li>
+                        Assuming ~300,000 lifetime km, visual-haptic feedback would save 5,371kWh per Novus
+
+                    </li>
+                    <li> 5.4TWh saved across the 1m lifetime sales target
+                    </li>
+                </ul>
+                </p>
+                <img src="img/human/resgraph.png" style="width: 100%;">
+            </div>
+            <div class="achinner">
+                <img src="img/human/res2.png" class="reqs2">
+                <p><strong>All electric use:
+                    </strong>
+                <ul>
+                    <li> Average cost of 1kWh of electricity = 28₵
+                    </li>
+                    <li>
+                        Novus owners saved ~$1500 in energy savings over the vehicle lifetime
+                    </li>
+                </ul>
+                </p>
+                <p><strong>Liquid fuel only use:
+                    </strong>
+                <ul>
+                    <li> Average engine efficiency of 30%
+                    </li>
+                    <li>
+                        18,000kWh of fuel saved </li>
+                    <li> 9.1kWH in 1L of petrol
+                    </li>
+                    <li>
+                        $1.50 average cost of petrol
+                    </li>
+                </ul>
+                </p>
+                <p><strong>Overall:
+                    </strong>
+                <ul>
+                    <li>
+                        Expect to save an average of ~$2240
+                    </li>
+                    <li>
+                        Cost of system ~$250
+                    </li>
+                    <li>
+                        Expect to save ~$1990 over the vehicle lifetime
+                    </li>
+                </ul>
+                </p>
+            </div>
+            <div class="achinner">
+                <img src="img/human/res3.png" class="reqs2">
+                <ul>
+                    <li>
+                        Lights correctly vary as inertial power surrogate increases
+                    </li>
+                    <li>
+                        Haptic vibration delivered if aggressivity is not reduced 5 seconds after lights display
+
+                    </li>
+                    <li>
+                        Haptic vibration frequency varies:
+                        <ul>
+                            <li>
+                                100Hz after amber lights
+                            </li>
+                            <li>
+                                200Hz after red lights
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <img src="img/human/res4.png" class="reqs2">
+                <ul>
+                    <li>
+                        Promising, cost-effective and safe system
+                    </li>
+                    <li>
+                        Further validation of emissions required
+
+                    </li>
+                    <li>
+                        Vehicle-level prototyping required
+                    </li>
+                    <li>
+                        More psychologically robust data is warranted
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row" onclick="accordion(5)">
+        <div class="item">
+            <h6>Safety Systems</h6>
+        </div>
+        <div class="plus">
+            <h6>+</h6>
+        </div>
+        <div class="cost">
+            <h6></h6>
+        </div>
+    </div>
+    <div class="expand" id="ach5">
+        <h4 class="sectionhead">The System</h4>
+        <div class="parentflex">
+            <div class="achinner">
+                <h3>First Wave</h3>
+                <p style="text-align: center;">Anti-Lock Braking System (ABS)<br>
+                    Electronic Brake Distribution (EBD)<br>
+                    Electronic Stability Control (ESC)<br>
+                    Brake Assist<br>
+                    Hill-start Assist
+                </p>
+            </div>
+            <div class="achinner">
+                <h3>Second Wave</h3>
+                <p style="text-align: center;">Pre-collision system<br>
+                    Lane Departure Alert with Steering assist<br>
+                    Automatic High Beams<br>
+                    Dynamic Radar Cruise Control<br>
+                    Road Sign Assist<br>
+                    Driver Monitoring Camera
+                </p>
+            </div>
+            <div class="achinner">
+                <img src="img/human/safety.png" style="height: 175px;">
+            </div>
+        </div>
+        <h4 class="sectionhead">Theoretical Grounding</h4>
+        <div class="parentflex">
+            <div class="achinner">
+                <p>The active safety systems should be composed of the First Wave of active technologies, being treated
+                    as a standard to have on a vehicle, and, since this is a car being designed to launch in 2030 it
+                    makes sense to include systems that are part of the Second Wave of active safety, considering this
+                    as an investment in the future of the automotive industry and on road safety [3].<br>
+                    <br>
+                    The NHTSA, is one of the various Road Safety Assessment Agencies that advocate and try to ensure
+                    that passive and active safety are regulated and standardised within vehicle manufacturers. In order
+                    to get a 5-star in NHTSA’s rating program a vehicle must possess at least the following active
+                    safety systems: Forward Collision Warning, Automatic Emergency Braking  and Lane Departure Warning
+                    [4]. Therefore the following active technologies were modelled and included in the Novus 2030:
+                    Pre-collision system and Lane Departure Alert with Steering Assist. <br>
+                    <br>
+                    The Pre-collision system detects elements, such as pedestrians, bicycles and vehicles ahead. When
+                    the possibility of a frontal collision with one of these elements is determined, a warning will be
+                    sent out to the driver to take evasive action, if danger persists the vehicle will start braking
+                    automatically making use of the BA system.
+                </p>
+            </div>
+        </div>
+        <div class="parentflex">
+            <div class="achinner">
+                <img src="img/human/steer.png" style="height: 300px;">
+            </div>
+            <div class="achinner" style="flex-grow: 0;">
+                <p>
+                    The <strong>Lane Departure Alert with Steering Assist</strong> acts when the system determines the
+                    vehicle is on a path to unintentionally depart from its lane, sending a signal to the driver and, if
+                    no action to change the course of the vehicle is determined, sending corrective steering inputs
+                    until the vehicle is within the correct distance from the lane boundaries.
+                </p>
+            </div>
+        </div>
+        <h4 class="sectionhead">Results</h4>
+        <div class="parentflex">
+            <div class="achinner">
+                <img src="img/human/res5.png" class="reqs2">
+                <p>
+                    Improve safety of the external environment
+                </p>
+            </div>
+            <div class="achinner">
+                <img src="img/human/res6.png" class="reqs2">
+                <p>
+                    Improve safety of driver and other passengers
+                </p>
+            </div>
+            <div class="achinner">
+                <img src="img/human/res7.png" class="reqs2">
+                <p>
+                Efficiency in fuel consumption
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="row" onclick="accordion(3)">
+        <div class="item">
+            <h6>Electric Propulsion System</h6>
+        </div>
+        <div class="plus">
+            <h6>+</h6>
+        </div>
+        <div class="cost">
+            <h6></h6>
+        </div>
+    </div>
+    <div class="expand" id="ach3">
+        <h4 class="sectionhead">Power Electronics Subsystem</h4>
+        <div class="parentflex">
+            <div class="achinner">
+                <img src="img/elec/power.png" style="height: 300px;">
+            </div>
+            <div class="achinner" style="flex-grow: 0;">
+                <p>
+                    Use of wide bandgap semiconductors in Future Propulsion Systems will allow for increases in
+                    efficiency and density.
+                </p>
+                <p>
+                    Higher possible switching frequencies allow for smaller passive component use reducing volume
+                </p>
+                <p>
+                    Higher material efficiency allows for increased performance at similar switching speeds while
+                    offering lower losses than conventional Si based devices.
+                </p>
+            </div>
+        </div>
+        <div class="parentflex">
+            <div class="achinner" style="flex-grow: 0;">
+                <p>
+                    In this project, a basic model of a DC/DC Converter was built to accompany models of vehicular
+                    subsystems of the Novus 2030, made by the AAPS CDT Cohort 2
+                </p>
+                <p>
+                    Requirements were captured as part of the process, with subsystem boundary diagrams and function
+                    trees developed to allow for modelling and subsystem interfacing to begin
+                </p>
+            </div>
+            <div class="achinner">
+                <img src="img/elec/powergraph.png" style="height: 300px;">
+            </div>
+        </div>
+    </div>
+    <div class="row" onclick="accordion(6)">
+        <div class="item">
+            <h6>Aerodynamics</h6>
+        </div>
+        <div class="plus">
+            <h6>+</h6>
+        </div>
+        <div class="cost">
+            <h6></h6>
+        </div>
+    </div>
+    <div class="expand" id="ach6">
+        <h4 class="sectionhead">Power Electronics Subsystem</h4>
+        <div class="parentflex">
+            <div class="achinner">
+                <img src="img/elec/power.png" style="height: 300px;">
+            </div>
+            <div class="achinner" style="flex-grow: 0;">
+                <p>
+                    Use of wide bandgap semiconductors in Future Propulsion Systems will allow for increases in
+                    efficiency and density.
+                </p>
+                <p>
+                    Higher possible switching frequencies allow for smaller passive component use reducing volume
+                </p>
+                <p>
+                    Higher material efficiency allows for increased performance at similar switching speeds while
+                    offering lower losses than conventional Si based devices.
+                </p>
+            </div>
+        </div>
+        <div class="parentflex">
+            <div class="achinner" style="flex-grow: 0;">
+                <p>
+                    In this project, a basic model of a DC/DC Converter was built to accompany models of vehicular
+                    subsystems of the Novus 2030, made by the AAPS CDT Cohort 2
+                </p>
+                <p>
+                    Requirements were captured as part of the process, with subsystem boundary diagrams and function
+                    trees developed to allow for modelling and subsystem interfacing to begin
+                </p>
+            </div>
+            <div class="achinner">
+                <img src="img/elec/powergraph.png" style="height: 300px;">
+            </div>
+        </div>
+    </div>
+    <span class="fot"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    <div class="footer">
+        <div class="footerin">
+            <h3>Author</h3>
+            <p>Website designed, coded and filled with content by AAPS CDT Cohort 2</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
